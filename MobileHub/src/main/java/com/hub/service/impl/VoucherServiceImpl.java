@@ -2,16 +2,15 @@ package com.hub.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hub.dto.Result;
+import com.hub.entity.SeckillVoucher;
 import com.hub.entity.Voucher;
 import com.hub.mapper.VoucherMapper;
-import com.hub.entity.SeckillVoucher;
 import com.hub.service.ISeckillVoucherService;
 import com.hub.service.IVoucherService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 /**
  * <p>
@@ -29,10 +28,11 @@ public class VoucherServiceImpl extends ServiceImpl<VoucherMapper, Voucher> impl
 
     @Override
     public Result queryVoucherOfShop(Long shopId) {
-        // 查询优惠券信息
-        List<Voucher> vouchers = getBaseMapper().queryVoucherOfShop(shopId);
-        // 返回结果
-        return Result.ok(vouchers);
+//        // 查询优惠券信息
+//        List<Voucher> vouchers = getBaseMapper().queryVoucherOfShop(shopId);
+//        // 返回结果
+//        return Result.ok(vouchers);
+        return Result.ok();
     }
 
     @Override

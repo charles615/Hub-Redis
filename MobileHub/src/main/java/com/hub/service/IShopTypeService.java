@@ -1,7 +1,8 @@
 package com.hub.service;
 
-import com.hub.entity.ShopType;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.hub.dto.Result;
+import com.hub.entity.ShopType;
 
 /**
  * <p>
@@ -12,5 +13,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2021-12-22
  */
 public interface IShopTypeService extends IService<ShopType> {
+
+    Result queryTypeList();
 
 }
