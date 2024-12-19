@@ -25,14 +25,7 @@ import java.util.concurrent.TimeUnit;
 import static com.hub.utils.RedisConstants.*;
 import static com.hub.utils.SystemConstants.USER_NICK_NAME_PREFIX;
 
-/**
- * <p>
- * 服务实现类
- * </p>
- *
- * @author 虎哥
- * @since 2021-12-22
- */
+
 @Slf4j
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
